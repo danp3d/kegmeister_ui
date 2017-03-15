@@ -1,0 +1,23 @@
+.Header-wrapper {
+  background-color: #333;
+  padding: 20px;
+  color: #eaeaea;
+}
+
+.Header-body h2 {
+  margin-top: 0.83em;
+  margin-bottom: 10px;
+}
+
+.Header-body span {
+  display: block;
+  margin-bottom: 0.83em;
+}
+
+.Header-body a,
+.Header-body a:active,
+.Header-body a:hover,
+.Header-body a:visited {
+  color: #fff;
+}
+

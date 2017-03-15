@@ -1,0 +1,35 @@
+.Status-wrapper {
+  background-color: #fff;
+  padding: 40px;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.Status-body {
+  width: 80%;
+  display: flex;
+  background: #eaeaea;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Status-temperature,
+.Status-state {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #fff;
+}
+
+.Status-temperature h3,
+.Status-state h3,
+.Status-temperature h4,
+.Status-state h4{
+  display: inline;
+  margin-right: 10px;
+}
+
+.Status-time span {
+  display: block;
+  margin-top: 5px;
+  color: rgba(0, 0, 0, 0.5);
+}
