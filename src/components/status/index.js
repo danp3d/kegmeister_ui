@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { connect } from 'react-redux';
-import { fetchStatus } from './ducks';
+import { createReduxConnection } from './ducks';
 import moment from 'moment';
 import './style.css';
 
@@ -53,13 +52,4 @@ class Status extends Component {
   }
 }
 
-export default connect((state) => {
-  return { 
-    temperature: state.statuses.temperature,
-    state: state.statuses.state
-  };
-}, (dispatch) => {
-  return { 
-    fetchStatus: (...args) => dispatch(fetchStatus(...args))
-  };
-})(Status);
+export default createReduxConnection()(Status);

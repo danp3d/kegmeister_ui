@@ -1,4 +1,5 @@
 import fetch from 'isomorphic-fetch';
+import { connect } from 'react-redux';
 
 export const STATUS_REQUEST = 'STATUS_REQUEST';
 export const STATUS_SUCCESS = 'STATUS_SUCCESS';
@@ -31,6 +32,19 @@ export const fetchStatus = type => dispatch => {
     });
   });
 };
+
+export const selectTemperature = state => state.statuses.temperature;
+export const selectState = state => state.statuses.state;
+export const createReduxConnection = () => connect(state => {
+  return {
+    temperature: selectTemperature(state),
+    state: selectState(state)
+  };
+}, dispatch => {
+  return {
+    fetchStatus: (...args) => dispatch(fetchStatus(...args)) 
+  };
+});
 
 export default (statuses = {}, action) => {
   switch(action.type) {
