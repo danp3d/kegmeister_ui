@@ -1,0 +1,17 @@
+.About-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 0px 40px 40px 40px;
+  color: rgba(0, 0, 0, 0.9);
+  text-align: left;
+}
+
+.image {
+  max-width: 100%;
+}
+
+.image img {
+  width: 100%;
+}

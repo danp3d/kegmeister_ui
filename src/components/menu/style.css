@@ -1,0 +1,36 @@
+.Menu-root {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding-top: 0px;
+  text-align: center;
+  padding: 20px;
+}
+
+.Menu-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Menu-menu ul li {
+  display: inline-block;
+  border: 1px solid #fff;
+}
+
+.Menu-menu ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.Menu-menu ul li a,
+.Menu-menu ul li a:visited,
+.Menu-menu ul li a:active {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.Menu-menu ul li a:hover,
+.Menu-menu ul li a.active{
+  background-color: #eaeaea;
+}

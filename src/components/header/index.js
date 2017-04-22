@@ -7,7 +7,7 @@ class Header extends Component {
       <div className="Header-wrapper">
         <div className="Header-body">
           <h2>Ze KegMeister</h2>
-          <span>By <a href="https://github.com/danp3d" target="_blank">danp3d</a></span>
+          <span>By <a href="http://danp3d.io">danp3d</a></span>
         </div>
       </div>
     );

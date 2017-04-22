@@ -1,7 +1,11 @@
 .Header-wrapper {
   background-color: #333;
-  padding: 20px;
   color: #eaeaea;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-shrink: 0;
 }
 
 .Header-body h2 {
